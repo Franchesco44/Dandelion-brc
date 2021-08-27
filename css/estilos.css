@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62, 5%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#Galeria .col-lg-3 {
+  padding: 15px;
+}
+
+#Galeria img {
+  border-radius: 6px;
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+#Galeria img:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+body {
+  overflow-x: hidden;
+}
+
+.nav {
+  background-color: #d5a7f0;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1, 2px solid #fff;
+}
+
+/*INICIO DEL TEXTO DANDELION*/
+.Logo {
+  color: rgb(22, 20, 20);
+  font-size: 34px;
+  padding: 0 75px;
+  font-weight: bold;
+  animation-name: aparecer;
+  animation-duration: 3s;
+}
+/*fin del texto DANDELION*/
+
+.Menu {
+  display: flex;
+  list-style: none;
+  margin-right: 25px;
+}
+
+.Menu li {
+  border-radius: 2px;
+  margin: 0 5px;
+}
+
+.Menu li a {
+  padding: 6px 5px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-transform: uppercase;
+  color: rgb(17, 16, 16);
+  animation-duration: 3s;
+  animation-name: aparecer;
+}
+
+.Menu li:hover,
+li.active {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.7s;
+}
+
+ul.mostrar {
+  top: 65px;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: #ffe576;
+}
+
+h3 {
+  color: #ffe576;
+}
+
+.CapuLila {
+  color: #b695c0;
+}
+
+.CapuSalmon {
+  color: #fa8072;
+}
+
+.CapuVerd {
+  color: #85bb65;
+}
+
+.goog li {
+  list-style: none;
+}
+
+.goog a {
+  color: black;
+  text-decoration: none;
+}
+
+.goog p {
+  color: blueviolet;
+}
+
+/*inicio del logo dandelion*/
+.nav img {
+  margin-left: 50px;
+}
+/*fin del logo dandelion*/
+.ImagenContainer {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ImagenPrincipal {
+  width: 550px;
+  height: 500px;
+  object-fit: cover;
+  padding: 10px;
+}
+.btn_menu {
+  margin-right: 25px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1220px) {
+  .Logo {
+    font-size: 30px;
+    padding-left: 35px;
+  }
+  .Menu li a {
+    font-size: 16px;
+  }
+  .container-carousel-imagen {
+    display: none;
+  }
+  #Galeria {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .Nav {
+    height: 65px;
+  }
+  .btn_menu {
+    display: inline-flex;
+  }
+  .Menu {
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 65px);
+    background: #3f3e3e;
+    top: -100vh;
+    text-align: center;
+    transition: all 0.5s;
+    flex-direction: column;
+  }
+  .Menu li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+  .Menu li:hover {
+    background: none;
+  }
+
+  .Menu li a {
+    font-size: 20px;
+    color: rgb(17, 16, 16);
+    font-weight: bold;
+  }
+  .Menu li a:hover {
+    color: #eed771;
+  }
+  .Nav {
+    font-size: 25px;
+    padding-left: 35px;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62, 5%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#Galeria .col-lg-3 {
+  padding: 15px;
+}
+
+#Galeria img {
+  border-radius: 6px;
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+#Galeria img:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+ul.mostrar {
+  top: 65px;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: #ffe576;
+}
+
+h3 {
+  color: #ffe576;
+}
+
+.CapuLila {
+  color: #b695c0;
+}
+
+.CapuSalmon {
+  color: #fa8072;
+}
+
+.CapuVerd {
+  color: #85bb65;
+}
+
+.goog li {
+  list-style: none;
+}
+
+.goog a {
+  color: black;
+  text-decoration: none;
+}
+
+.goog p {
+  color: blueviolet;
+}
+
+.ImagenDeLogo img {
+  margin: auto;
+  display: flex;
+}
+
+.ImagenContainer {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ImagenPrincipal {
+  width: 550px;
+  height: 500px;
+  object-fit: cover;
+  padding: 10px;
+}
+.imagen1 {
+  width: 550px;
+  padding-bottom: 7rem;
+}
+
+.imagen2 {
+  width: 900px;
+}
+.imagen3 {
+  width: 848px;
+}
+
+@media screen and (max-width: 980px) {
+  .Logo {
+    font-size: 30px;
+    padding-left: 35px;
+  }
+  .Menu li a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .Nav {
+    height: 65px;
+  }
+  .btn_menu {
+    display: inline-flex;
+  }
+  .Menu {
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 65px);
+    background: #3f3e3e;
+    top: -100vh;
+    text-align: center;
+    transition: all 0.5s;
+    flex-direction: column;
+  }
+  .Menu li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+  .Menu li:hover {
+    background: none;
+  }
+
+  .Menu li a {
+    font-size: 20px;
+    color: rgb(17, 16, 16);
+    font-weight: bold;
+  }
+  .Menu li a:hover {
+    color: #eed771;
+  }
+  .Nav {
+    font-size: 25px;
+    padding-left: 35px;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
