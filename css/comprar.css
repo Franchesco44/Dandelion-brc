@@ -98,7 +98,7 @@ h2 {
 }
 /*fin del logo dandelion*/
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1220px) {
   .Logo {
     font-size: 30px;
     padding-left: 35px;
@@ -108,7 +108,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1220px) {
   .Nav {
     height: 65px;
   }

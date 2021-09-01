@@ -75,7 +75,7 @@ li.active {
 
 /*fin del nav*/
 
-@media screen and (max-width: 1060px) {
+@media (max-width: 1220px) {
   .Nav {
     height: 65px;
   }

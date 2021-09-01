@@ -75,7 +75,7 @@ ul li {
   list-style: none;
 }
 
-.LogoImagen {
+.nav img {
   height: 85px;
   width: 85px;
   margin-right: 100px;
@@ -87,7 +87,7 @@ ul li {
 }
 /*fin del logo dandelion*/
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1220px) {
   .Logo {
     font-size: 30px;
     padding-left: 35px;
@@ -97,7 +97,7 @@ ul li {
   }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1220px) {
   .Nav {
     height: 65px;
   }

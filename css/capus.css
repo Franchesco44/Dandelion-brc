@@ -5,6 +5,10 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #Galeria .col-lg-3 {
   padding: 10px;
 }
@@ -86,7 +90,7 @@ ul li {
   margin-right: 100px;
 }
 
-@media screen and (max-width: 980px) {
+@media (max-width: 1220px) {
   .Logo {
     font-size: 30px;
     padding-left: 35px;
@@ -94,9 +98,12 @@ ul li {
   .Menu li a {
     font-size: 16px;
   }
+  #Galeria {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 1060px) {
+@media (max-width: 1220px) {
   .Nav {
     height: 65px;
   }
