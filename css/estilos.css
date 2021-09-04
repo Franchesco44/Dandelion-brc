@@ -6,13 +6,13 @@
 }
 
 #Galeria .col-lg-3 {
-  padding: 15px;
+  padding: 0.938rem;
 }
 
 #Galeria img {
-  border-radius: 6px;
+  border-radius: 0.375rem;
   max-width: 100%;
-  height: 400px;
+  height: 25rem;
   object-fit: cover;
 }
 
@@ -25,22 +25,27 @@ body {
   overflow-x: hidden;
 }
 
-.nav {
+.header-nav {
   background-color: #d5a7f0;
-  height: 100px;
-  width: 100vw;
+  height: 6.25rem;
+  width: 100%;
+}
+
+.nav {
+  line-height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1, 2px solid #fff;
+  max-width: 992px;
+  margin: 0 auto;
 }
 
 /*INICIO DEL TEXTO DANDELION*/
 .Logo {
   color: rgb(22, 20, 20);
-  font-size: 34px;
-  padding: 0 75px;
-  font-weight: bold;
+  font-size: 1.875rem;
+  padding: 0 4.375rem;
   animation-name: aparecer;
   animation-duration: 3s;
 }
@@ -49,160 +54,127 @@ body {
 .Menu {
   display: flex;
   list-style: none;
-  margin-right: 25px;
-}
-
-.Menu li {
-  border-radius: 2px;
-  margin: 0 5px;
-}
-
-.Menu li a {
-  padding: 6px 5px;
+  margin-right: 1.563rem;
   text-decoration: none;
-  font-size: 17px;
-  display: block;
+}
+/*copiar esto*/
+.nav-menu-li-a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 0.938rem;
+  padding: 0.375 0.313rem;
   text-transform: uppercase;
-  color: rgb(17, 16, 16);
   animation-duration: 3s;
   animation-name: aparecer;
+  width: max-content;
 }
 
-.Menu li:hover,
-li.active {
-  background-color: rgba(0, 0, 0, 0.3);
+.nav-menu-li-a a {
+  padding: 0.313rem 0.313rem;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(17, 16, 16);
+}
+
+.nav-menu-li-a a:hover {
+  color: rgb(17, 16, 16);
+  background-color: rgba(26, 30, 51, 0.3);
   transition: 0.7s;
 }
+/*copiar esto*/
 
-ul.mostrar {
-  top: 65px;
-}
-
-h1 {
-  color: black;
-}
-
-h2 {
-  color: #ffe576;
-}
-
-h3 {
-  color: #ffe576;
-}
-
-.CapuLila {
-  color: #b695c0;
-}
-
-.CapuSalmon {
-  color: #fa8072;
-}
-
-.CapuVerd {
-  color: #85bb65;
-}
-
-.goog li {
-  list-style: none;
-}
-
-.goog a {
-  color: black;
-  text-decoration: none;
-}
-
-.goog p {
-  color: blueviolet;
-}
-
-/*inicio del logo dandelion*/
-.nav img {
-  height: 85px;
-  width: 85px;
-  margin-left: 50px;
-}
-/*fin del logo dandelion*/
-.ImagenContainer {
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.ImagenPrincipal {
-  width: 550px;
-  height: 500px;
-  object-fit: cover;
-  padding: 10px;
-}
 .btn_menu {
-  margin-right: 25px;
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
+  margin-right: 1.563rem;
+  font-size: 1.563rem;
+  color: rgb(15, 14, 14);
+  background: none;
+  border: none;
+  padding: 0 1.25rem;
+  display: none;
+  padding: 0 1.25rem;
+  line-height: 3.75rem;
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .header-nav {
+    height: 5rem;
+  }
+  
+  .container-carousel-imagen {
   display: none;
 }
-
-@media screen and (max-width: 1220px) {
-  .Logo {
-    font-size: 30px;
-    padding-left: 35px;
-  }
-  .Menu li a {
-    font-size: 16px;
-  }
-  .container-carousel-imagen {
-    display: none;
-  }
-  #Galeria {
-    text-align: center;
-  }
+  #Galeria{
+  text-align: center;
+  margin-top: 23.79rem;
 }
 
-@media screen and (max-width: 1220px) {
-  .Nav {
-    height: 65px;
-  }
-  .btn_menu {
-    display: inline-flex;
-  }
-  .Menu {
-    position: fixed;
-    width: 100vw;
-    height: calc(100% - 65px);
-    background: #3f3e3e;
-    top: -100vh;
-    text-align: center;
-    transition: all 0.5s;
+  .nav {
+    display: flex;
+    line-height: 3.6rem;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1, 0.125rem solid #fff;
+    max-width: 992px;
+    margin: 0 auto;
   }
-  .Menu li {
-    margin: 30px 0 0 0;
-    line-height: 30px;
+  
+  /*INICIO DEL TEXTO DANDELION*/
+  .Logo {
+    color: rgb(22, 20, 20);
+    font-size: 1.875rem;
+    padding: 0 1.875rem;
+    animation-name: aparecer;
+    animation-duration: 3s;
+    margin-top: 1rem;
   }
-  .Menu li:hover {
-    background: none;
+  /*fin del texto DANDELION*/
+  
+  .Menu {
+    flex-direction: column;
+    background-color: #203f5ce0;
+    margin-right: 1.25;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    width: 100%;
+    align-items: center;
+    padding: 0;
   }
-
-  .Menu li a {
-    font-size: 20px;
+  /*copiar esto*/
+  .nav-menu-li-a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.938rem;
+    padding: 0.375rem 0.313rem;
+    text-transform: uppercase;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    width: max-content;
+  }
+  
+  .nav-menu-li-a a {
+    padding: 0.313rem 0.313rem;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(236, 232, 232);
+  }
+  
+  .nav-menu-li-a a:hover {
     color: rgb(17, 16, 16);
-    font-weight: bold;
+    background-color: rgba(26, 30, 51, 0.3);
+    transition: 0.7s;
   }
-  .Menu li a:hover {
-    color: #eed771;
-  }
-  .Nav {
-    font-size: 25px;
-    padding-left: 35px;
-  }
-}
 
-@keyframes aparecer {
-  0% {
-    opacity: 0;
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  100% {
-    opacity: 1;
-  }
-}
