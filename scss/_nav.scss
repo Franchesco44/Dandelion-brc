@@ -1,55 +1,56 @@
+.header-nav {
+  background-color: #d5a7f0;
+  height: 6.25rem;
+  width: 100%;
+}
+
 .nav {
-  background-color: $color-nav;
-  height: 100px;
-  width: 100vw;
+  line-height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1, 2px solid #fff;
+  max-width: 992px;
+  margin: 0 auto;
 }
 
+/*INICIO DEL TEXTO DANDELION*/
 .Logo {
   color: rgb(22, 20, 20);
-  font-size: 34px;
-  padding: 0 75px;
-  font-weight: bold;
-  animation-duration: 3s;
+  font-size: 1.875rem;
+  padding: 0 4.375rem;
   animation-name: aparecer;
+  animation-duration: 3s;
 }
+/*fin del texto DANDELION*/
 
 .Menu {
   display: flex;
   list-style: none;
-  margin-right: 35px;
-}
-
-.Menu li {
-  border-radius: 2px;
-  margin: 0 5px;
-}
-
-.Menu li a {
-  padding: 6px 13px;
+  margin-right: 1.563rem;
   text-decoration: none;
-  font-size: 17px;
-  display: block;
+}
+/*copiar esto*/
+.nav-menu-li-a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 0.938rem;
+  padding: 0.375 0.313rem;
   text-transform: uppercase;
-  color: rgb(17, 16, 16);
   animation-duration: 3s;
   animation-name: aparecer;
+  width: max-content;
 }
 
-.Menu li:hover,
-li.active {
-  background-color: rgba(0, 0, 0, 0.3);
+.nav-menu-li-a a {
+  padding: 0.313rem 0.313rem;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(17, 16, 16);
+}
+
+.nav-menu-li-a a:hover {
+  color: rgb(17, 16, 16);
+  background-color: rgba(26, 30, 51, 0.3);
   transition: 0.7s;
-  color: #fa8072;
-}
-
-.btn_menu {
-  margin-right: 25px;
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-  display: none;
 }

@@ -57,7 +57,7 @@ body {
   margin-right: 1.563rem;
   text-decoration: none;
 }
-/*copiar esto*/
+
 .nav-menu-li-a {
   list-style: none;
   text-decoration: none;
@@ -81,7 +81,6 @@ body {
   background-color: rgba(26, 30, 51, 0.3);
   transition: 0.7s;
 }
-/*copiar esto*/
 
 .btn_menu {
   margin-right: 1.563rem;
@@ -99,18 +98,19 @@ body {
   body {
     overflow-x: hidden;
   }
-  
+
   .header-nav {
     height: 5rem;
   }
-  
+
   .container-carousel-imagen {
-  display: none;
-}
-  #Galeria{
-  text-align: center;
-  margin-top: 23.79rem;
-}
+    display: none;
+  }
+
+  #Galeria {
+    text-align: center;
+    margin-top: 23.79rem;
+  }
 
   .nav {
     display: flex;
@@ -122,7 +122,7 @@ body {
     max-width: 992px;
     margin: 0 auto;
   }
-  
+
   /*INICIO DEL TEXTO DANDELION*/
   .Logo {
     color: rgb(22, 20, 20);
@@ -133,7 +133,7 @@ body {
     margin-top: 1rem;
   }
   /*fin del texto DANDELION*/
-  
+
   .Menu {
     flex-direction: column;
     background-color: #203f5ce0;
@@ -156,25 +156,26 @@ body {
     animation-name: aparecer;
     width: max-content;
   }
-  
+
   .nav-menu-li-a a {
     padding: 0.313rem 0.313rem;
     list-style: none;
     text-decoration: none;
     color: rgb(236, 232, 232);
   }
-  
+
   .nav-menu-li-a a:hover {
     color: rgb(17, 16, 16);
     background-color: rgba(26, 30, 51, 0.3);
     transition: 0.7s;
   }
+}
 
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+@keyframes aparecer {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
