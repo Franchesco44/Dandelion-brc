@@ -66,16 +66,8 @@ body {
 }
 /*copiar esto*/
 
-.btn_menu {
-  margin-right: 1.563rem;
-  font-size: 1.563rem;
-  color: rgb(15, 14, 14);
-  background: none;
-  border: none;
-  padding: 0 1.25rem;
-  display: none;
-  padding: 0 1.25rem;
-  line-height: 3.75rem;
+.Contacto-alto {
+  margin-top: 2rem;
 }
 
 @media (max-width: 1024px) {

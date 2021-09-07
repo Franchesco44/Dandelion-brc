@@ -61,21 +61,10 @@ body {
 }
 
 .nav-menu-li-a a:hover {
+  text-decoration: none;
   color: rgb(17, 16, 16);
   background-color: rgba(26, 30, 51, 0.3);
   transition: 0.7s;
-}
-
-.btn_menu {
-  margin-right: 1.563rem;
-  font-size: 1.563rem;
-  color: rgb(15, 14, 14);
-  background: none;
-  border: none;
-  padding: 0 1.25rem;
-  display: none;
-  padding: 0 1.25rem;
-  line-height: 3.75rem;
 }
 
 @media (max-width: 1024px) {
