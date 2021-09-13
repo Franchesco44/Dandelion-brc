@@ -133,6 +133,7 @@ body {
   }
 
   .nav-menu-li-a a:hover {
+    text-decoration: none;
     color: rgb(17, 16, 16);
     background-color: rgba(26, 30, 51, 0.3);
     transition: 0.7s;
